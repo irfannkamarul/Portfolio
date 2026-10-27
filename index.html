@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Muhammad Irfan Bin Kamarulzaman | Networking Computing Portfolio</title>
+  <meta name="description" content="Portfolio of Muhammad Irfan, a Networking Computing student at UNIMAS interested in networking, web development and AI.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230b1f3a'/%3E%3Ctext x='50' y='66' font-size='48' font-family='sans-serif' font-weight='700' fill='white' text-anchor='middle'%3EMI%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap">
+  <!-- Apply the saved theme before first paint to avoid a flash -->
+  <script>
+    document.documentElement.classList.add('js');
+    try {
+      var t = localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+  <div id="progress" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav aria-label="Main navigation">
+      <a class="logo" href="#home">Irfan Kamarul</a>
+      <ul id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About me</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="themeBtn" class="icon-btn" type="button" aria-label="Switch to dark mode">🌙</button>
+      <button id="menuBtn" class="icon-btn menu-btn" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu">☰</button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HOME -->
+    <section id="home" class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div>
+          <h1 id="hero-title">Muhammad Irfan Bin Kamarulzaman</h1>
+          <p class="role">Year 3 Networking Computing student at UNIMAS</p>
+          <p class="lead">I enjoy troubleshooting networks, building websites and learning how AI is changing IT. I’m looking for an internship in networking or IT.</p>
+          <div class="cta">
+            <a class="btn" href="#projects">View my projects</a>
+            <a class="btn ghost" href="#contact">Contact me</a>
+          </div>
+        </div>
+        <div class="avatar" role="img" aria-label="Initials M I">MI</div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" aria-labelledby="projects-title">
+      <div class="wrap">
+        <h2 id="projects-title">Projects</h2>
+        <p class="muted">Coursework and personal projects. Open a card for more detail.</p>
+        <div class="filters" role="group" aria-label="Filter projects by type">
+          <button type="button" class="chip" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" class="chip" data-filter="Web" aria-pressed="false">Web</button>
+          <button type="button" class="chip" data-filter="Desktop" aria-pressed="false">Desktop</button>
+          <button type="button" class="chip" data-filter="Networking" aria-pressed="false">Networking</button>
+        </div>
+        <div id="projectGrid" class="grid"></div>
+        <noscript><p>Please enable JavaScript to see the project list.</p></noscript>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="alt" aria-labelledby="about-title">
+      <div class="wrap two-col">
+        <div>
+          <h2 id="about-title">About me</h2>
+          <p>I’m a Networking Computing student who enjoys learning how modern networks work and how technology connects people and businesses. Problem-solving drives me to build practical solutions and grow my skills in networking and IT infrastructure.</p>
+          <p>Outside of study, I play strategy and competitive games. They’ve trained me to think under pressure, make quick decisions and keep improving.</p>
+          <p>My next goal is an internship in networking or IT, where I can apply what I’ve learned and gain real-world experience. Right now I’m expanding my skills in computer networking, cybersecurity and web development.</p>
+        </div>
+        <dl class="facts">
+          <div><dt>Studying</dt><dd>Bachelor of Computer Science (Networking Computing), UNIMAS</dd></div>
+          <div><dt>Interests</dt><dd>Web development, network troubleshooting, AI</dd></div>
+          <div><dt>Looking for</dt><dd>Internship in networking or IT</dd></div>
+          <div><dt>Experience</dt><dd>Industrial training at Jabatan Laut Sarawak</dd></div>
+        </dl>
+      </div>
+
+      <div class="wrap">
+        <h3>Skills</h3>
+        <ul class="skills">
+          <li><span class="sname">Networking fundamentals</span><span class="pct">Intermediate, 75%</span>
+            <div class="bar" aria-hidden="true"><i style="--lvl:75%"></i></div>
+            <p>TCP/IP, IP addressing, subnetting, routing and switching. I can configure and troubleshoot basic networks.</p></li>
+          <li><span class="sname">Cisco Packet Tracer</span><span class="pct">Intermediate, 80%</span>
+            <div class="bar" aria-hidden="true"><i style="--lvl:80%"></i></div>
+            <p>Design topologies, configure routers, switches, VLANs and basic services, then test connectivity and fix common issues.</p></li>
+          <li><span class="sname">MySQL and database fundamentals</span><span class="pct">Beginner to intermediate, 70%</span>
+            <div class="bar" aria-hidden="true"><i style="--lvl:70%"></i></div>
+            <p>Design simple databases, create tables and relationships, and write basic SQL queries.</p></li>
+          <li><span class="sname">UML modelling</span><span class="pct">Intermediate, 70%</span>
+            <div class="bar" aria-hidden="true"><i style="--lvl:70%"></i></div>
+            <p>Use case, sequence, system sequence and activity diagrams to capture requirements and document systems.</p></li>
+          <li><span class="sname">Git and GitHub</span><span class="pct">Beginner, 50%</span>
+            <div class="bar" aria-hidden="true"><i style="--lvl:50%"></i></div>
+            <p>Upload projects, manage repositories and keep version control for coursework.</p></li>
+        </ul>
+      </div>
+
+      <div class="wrap two-col timeline-wrap">
+        <div>
+          <h3>Experience</h3>
+          <ol class="timeline">
+            <li><strong>Industrial training</strong><span>Jabatan Laut Sarawak, 2024</span><p>Hands-on training placement in a government department.</p></li>
+          </ol>
+        </div>
+        <div>
+          <h3>Education</h3>
+          <ol class="timeline">
+            <li><strong>Bachelor of Computer Science (Networking Computing)</strong><span>UNIMAS, 2024 to present</span></li>
+            <li><strong>Diploma in Information Technology</strong><span>2020 to 2024</span></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" aria-labelledby="contact-title">
+      <div class="wrap two-col">
+        <div>
+          <h2 id="contact-title">Contact</h2>
+          <p>Looking for an intern, or have a question? Send me a message or email me directly:</p>
+          <p><a id="emailLink" href="mailto:irfann.kamarul@gmail.com">irfann.kamarul@gmail.com</a></p>
+          <button id="copyBtn" class="btn ghost" type="button">Copy email address</button>
+          <p id="copyStatus" class="status" role="status"></p>
+        </div>
+        <form id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required aria-describedby="nameErr">
+            <span id="nameErr" class="error" role="alert"></span>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="emailErr">
+            <span id="emailErr" class="error" role="alert"></span>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" maxlength="500" required aria-describedby="messageErr"></textarea>
+            <span class="hint" id="count">0/500</span>
+            <span id="messageErr" class="error" role="alert"></span>
+          </div>
+          <button class="btn" type="submit">Send message</button>
+          <p id="formStatus" class="status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© <span id="year">2026</span> Muhammad Irfan Bin Kamarulzaman. Built with HTML, CSS and JavaScript.</div>
+  </footer>
+
+  <button id="toTop" class="to-top" type="button" aria-label="Back to top" hidden>↑</button>
+
+  <dialog id="modal" aria-labelledby="modalTitle">
+    <button id="modalClose" class="icon-btn close" type="button" aria-label="Close project details">✕</button>
+    <h3 id="modalTitle"></h3>
+    <p id="modalBody"></p>
+    <ul id="modalTags" class="tags"></ul>
+    <a id="modalLink" class="btn" href="#" rel="noopener" hidden>View project</a>
+  </dialog>
+</body>
+</html>
